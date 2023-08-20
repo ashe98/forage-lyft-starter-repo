@@ -15,7 +15,7 @@ class CarFactory:
         last_service_mileage: int,
     ) -> Car:
         engine = CapuletEngine(
-            current_mileage=current_mileage, last_service_mileage=last_service_date
+            current_mileage=current_mileage, last_service_mileage=last_service_mileage
         )
         battery = SpindlerBattery(
             last_service_date=last_service_date, current_date=current_date
@@ -70,7 +70,7 @@ class CarFactory:
         last_service_mileage: int,
     ) -> Car:
         engine = CapuletEngine(
-            current_mileage=current_mileage, last_service_mileage=last_service_date
+            current_mileage=current_mileage, last_service_mileage=last_service_mileage
         )
         battery = NubbinBattery(
             last_service_date=last_service_date, current_date=current_date
